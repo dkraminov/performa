@@ -4,13 +4,12 @@ import sys
 import os
 import time
 
-concurrency = 100
+concurrency = 10
 count = 1000
 answers = 0
 fetchers = 0
 test_counter = 0
 url = ""
-
 timers = {
     "minimal": 10000000000.0,
     "maximal": 0.,
@@ -186,6 +185,7 @@ for i in range(concurrency):
 
 start_time = time.time()
 try:
+    pass
     ioloop.start()
 except KeyboardInterrupt:
     stop_all()
